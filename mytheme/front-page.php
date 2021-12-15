@@ -22,9 +22,9 @@
     'no_found_rows' => true,  //ページャーを使う時はfalseに。
     );
   $the_query = new WP_Query($args);
-  $get_num = $the_query->post_count;//取得した数
+  //$get_num = $the_query->post_count;//取得した数
   
-  echo "<h4>最新記事".$get_num."件</h4>";
+  echo "<h4>what's new</h4>";
   if ( $the_query->have_posts() ) :?>
 
   <ul>
