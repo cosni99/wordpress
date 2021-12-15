@@ -620,3 +620,20 @@ article a:hover img {
 		text-align: center;
 	}
 }
+
+/*トップページ新着*/
+.new{
+	padding: 10px;
+	background-color: #f0f8ff;
+	border-radius: 10px;
+}
+.new ul{
+	list-style: none;
+}
+.new h4{
+	text-align: center;
+	color: var(--basecolor);
+}
+.new a{
+	font-size: var(--f6);
+}
