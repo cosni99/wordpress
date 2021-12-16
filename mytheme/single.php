@@ -9,7 +9,7 @@
       <?php the_category(); ?><!--記事のカテゴリー-->
 
       <h1><?php the_title();?></h1><!--記事タイトル-->
-
+      <span class="dashicons dashicons-clock"></span>
       <time datetime="<?php echo esc_attr( get_the_date( DATE_W3C ) ); ?>">
         <?php echo esc_html( get_the_date() ); ?><!--投稿日時-->
       </time>
