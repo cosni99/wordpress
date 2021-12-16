@@ -23,9 +23,16 @@ jQuery(function() {
 </script>
 <!--ここまで追加したコード-->
 <footer class="myfoot">
-  <?php bloginfo( 'name' ); ?>
-  </footer>
-
+    <?php bloginfo( 'name' ); ?>
+</footer>
+<!--動画背景ウィジェット-->
+<?php if ( is_active_sidebar( 'sidebar-2' ) ){ ?>
+    <div class="video-wrap">
+        <?php dynamic_sidebar( 'sidebar-2' ); ?>
+        <video class="fbgvsrc" src="<?php echo esc_url( get_theme_file_uri( 'Footage.mp4' ) ); ?>" autoplay loop muted>
+        </video>
+    </div>
+<?php } ?>
 <?php wp_footer();?>
 
 </body>

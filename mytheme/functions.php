@@ -68,6 +68,17 @@ function mytheme_widgets() {
 }
 add_action( 'widgets_init', 'mytheme_widgets' );
 
+function mytheme_widgets2() {
+	// ウィジェットエリアを登録
+	register_sidebar( array(
+		'id' => 'sidebar-2',
+    'name' => '動画背景フッター',
+    'before_widget' => '<section id="%1$s" class="bgvideo widget %2$s">',
+		'after_widget'  => '</section>'
+	) );
+
+}
+add_action( 'widgets_init', 'mytheme_widgets2' );
 // ブロックスタイル
 register_block_style(
 	'core/image',
