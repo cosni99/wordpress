@@ -545,7 +545,8 @@ a:hover {
   bottom: 5px;
   background: #000000;
   opacity: 0.6;
-  border-radius: 50%;
+	border-radius: 50%;
+	z-index: 10;
 }
 #page_top a{
   position: relative;
@@ -568,7 +569,8 @@ a:hover {
   right: 0;
   left: 0;
   margin: auto;
-  text-align: center;
+	text-align: center;
+	z-index: 10;
 }
 
 /*トップ画像ホバー*/
@@ -674,9 +676,11 @@ article a:hover img {
 .bgvideo{
 	position: absolute;
 	color: #fff;
+	z-index: 1;
 }
 .fbgvsrc{
 	width: 100%;
+	z-index: 0;
 }
 /*カレンダー nav非表示*/
 .calendar_wrap nav{

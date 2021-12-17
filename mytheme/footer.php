@@ -22,9 +22,6 @@ jQuery(function() {
 });
 </script>
 <!--ここまで追加したコード-->
-<footer class="myfoot">
-    <?php bloginfo( 'name' ); ?>
-</footer>
 <!--動画背景ウィジェット-->
 <?php if ( is_active_sidebar( 'sidebar-2' ) ){ ?>
     <div class="video-wrap">
@@ -33,6 +30,10 @@ jQuery(function() {
         </video>
     </div>
 <?php } ?>
+
+<footer class="myfoot">
+    <?php bloginfo( 'name' ); ?>
+</footer>
 <?php wp_footer();?>
 
 </body>
