@@ -520,10 +520,10 @@ a:hover {
 }
 
 /* スライダーキャプション */
-@media (min-width: 1000px) {
+@media (min-width: 900px) {
 .alignfull .metaslider .caption-wrap{
 	text-align: center;
-	bottom: 200px;
+	bottom: 50%;
 	font-size: var(--f1);
 	text-shadow: 1px 1px 10px black;
 	background-color:rgba(0,0,0,0);
@@ -686,3 +686,20 @@ article a:hover img {
 .calendar_wrap nav{
 	visibility:hidden;
 }
+
+/* カスタム投稿 テーブル*/
+.kasutamu {
+	width: 100%;
+	text-align: center;
+	border-collapse: collapse;
+	border-spacing: 0;
+ }
+ .kasutamu th {
+	padding: 10px;
+	background: #e9faf9;
+	border: solid 1px #778ca3;
+ }
+ .kasutamu td {
+	padding: 10px;
+	border: solid 1px #778ca3;
+ }

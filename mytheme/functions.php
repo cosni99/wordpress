@@ -107,3 +107,21 @@ register_block_style(
 			}'
 	)
 );
+
+//カスタム投稿
+function create_post_type(){
+	register_post_type('cosumenu',[//投稿タイプ名の定義
+		'labels' =>[
+			'name' => 'コースメニュー',//管理画面で表示する投稿タイプ名
+			'singular_name' => 'コースメニュー',//カスタム投稿の識別名
+		],
+		'public' => true,
+		'has_archive' => true,//アーカイブ機能
+		'menu_position' => 5,//管理画面での表示位置
+		'show_in_rest' => false,//新エディターを無効にするか
+		'supports' => array('title','thumbnail')//タイトルとアイキャッチ
+	]);
+	//タグ表示
+	register_taxonomy_for_object_type('post_tag','cosumenu');
+}
+add_action( 'init', 'create_post_type' );
