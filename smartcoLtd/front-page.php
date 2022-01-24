@@ -1,15 +1,15 @@
 <?php get_header(); ?><!--header.php読み込み-->
 
 <div class="video-wrap">
-        <section class="bgvideo"><h2 class="fadeUp">情報を受信する力</h2>
-        <h2 class="fadeUp delay-time02">&nbsp;情報をアイディアに変える力</h2>
-        <h2 class="fadeUp delay-time04">&nbsp;&nbsp;情報を形に変える力を大切にしたい</h2>
+        <section class="bgvideo"><p class="fadeUp">情報を受信する力</p>
+        <p class="fadeUp delay-time02">&nbsp;情報をアイディアに変える力</p>
+        <p class="fadeUp delay-time04">&nbsp;&nbsp;情報を形に変える力を大切にしたい</p>
         </section>
         <video class="fbgvsrc" src="<?php echo esc_url( get_theme_file_uri( 'Forest.mp4' ) ); ?>" autoplay loop muted>
         </video>
 </div>
-<div class="wp-block-spacer" style="height: 40px;" aria-hidden="true"> </div>
-
+<div class="wp-block-spacer" style="height: 40px;" aria-hidden="true"></div>
+<h1 style="display:none"><?php bloginfo( 'name' ); ?></h1>
 
   <?php if(have_posts()){ 
     while(have_posts()){ 
@@ -48,7 +48,7 @@
 <?php endif; ?>
 </div>
 
-<div class="wp-block-spacer" style="height: 40px;" aria-hidden="true"> </div>
+<div class="wp-block-spacer" style="height: 40px;" aria-hidden="true"></div>
 
 <!--最新記事END-->
 <?php //get_sidebar(); ?><!--sidebar.php読み込み-->

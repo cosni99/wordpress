@@ -19,6 +19,17 @@ jQuery(function() {
         }, 500); //0.5秒かけてトップへ移動
         return false;
     });
+
+    //ハンバーガー
+    $(".openbtn1").click(function () {//ボタンがクリックされたら
+        $(this).toggleClass('active');//ボタン自身に activeクラスを付与し
+        $(".mynav").toggleClass('panelactive');//ナビゲーションにpanelactiveクラスを付与
+    });
+
+    $("#g-nav a").click(function () {//ナビゲーションのリンクがクリックされたら
+        $(".openbtn1").removeClass('active');//ボタンの activeクラスを除去し
+        $(".mynav").removeClass('panelactive');//ナビゲーションのpanelactiveクラスも除去
+    });
 });
 </script>
 

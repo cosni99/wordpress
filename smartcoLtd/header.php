@@ -44,6 +44,7 @@
   </header>
 
 <?php if( has_nav_menu( 'primary' ) ){ ?><!--ナビ-->
+<div class="openbtn1"><span></span><span></span><span></span></div>
   <nav class="mynav">
     <div class="mycontainer">
     <div class="alignwide">
